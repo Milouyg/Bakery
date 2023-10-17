@@ -1,8 +1,7 @@
-<!-- Hier maken we de class Database aan en
-halen we gegevens van de database op zodat
-we deze in products.php kunnen gebruiken -->
-
 <?php
+// Hier maken we de class Database aan en
+// halen we gegevens van de database op zodat
+// we deze in products.php kunnen gebruiken 
 class Database{
     public $instance;
     public $serverName;
