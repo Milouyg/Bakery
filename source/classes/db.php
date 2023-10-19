@@ -36,6 +36,14 @@ class Database{
         }
         return $products;
     }
+
+    function getProduct($id){
+        $sql = "SELECT * from products WHERE id=? LIMIT 1";
+        $stmt = $this->instance->prepare($sql);
+        $stmt->execute([$id]);
+        $row = $stmt->fetch();
+        return $row;
+    }
 }
 
 
