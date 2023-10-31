@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="/style.css">
     <title>Bakkerij</title>
 </head>
-<!-- Hier tonen we product.php op het scherm -->
 
 <body>
-
+    
     <?php
     // Making database connection
     require_once('../source/classes/db.php');
