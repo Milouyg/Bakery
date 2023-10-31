@@ -1,11 +1,7 @@
-<!-- Hier maken we de database verbinding aan
-Ook roepen we de getProducts functie aan -->
-<?php echo getcwd() ?>
-
 <?php $products = $connectionDB->getProducts(); ?>
 <section class="section-product">
     <?php foreach ($products as $product) : ?>
-        <a href="./detail.php?id=<?php echo $product['id'];?>">
+        <a href="./products/<?php echo $product['slug'] ?>">
             <article class="product">
                 <h1 class="product-name"><?php echo $product['title'];?></h1>
                 <figure class="container-img">

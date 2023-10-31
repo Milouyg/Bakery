@@ -3,7 +3,8 @@
 // van de database op en ga ik de detail product 
 // pagina maken
 
-$product = $connectionDB->getProduct(1);
+// Getting the product_slug from the index.php
+$product = $connectionDB->getProduct(PRODUCT_SLUG);
 ?>
 
 <section class="detail-page">
