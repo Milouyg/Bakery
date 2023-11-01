@@ -14,6 +14,6 @@ $product = $connectionDB->getProduct(PRODUCT_SLUG);
         <ul>
             <li><?php echo $product['ingrediënts']; ?></li>
         </ul>
-        <img src="./imgs/<?php echo $product['img']; ?>" alt="">
+        <img src="./imgs/<?php echo $product['img'];?>" alt="">
     </article>
 </section>
